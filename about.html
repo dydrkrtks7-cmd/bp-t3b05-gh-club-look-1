@@ -2,264 +2,268 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>정보 — 공항 클럽 룩북 | 브루탈리즘 에지</title>
-    <meta name="description" content="공항 클럽 룩북의 모든 것. 위치, 드레스 코드, 입장 규정까지. 길들여진 패션은 여기서 죽는다. 원시적인 에너지를 느껴라. 규칙은 없다. 오직 스트리트 브루탈리즘만이 남는다.">
-    <meta name="keywords" content="공항클럽룩북 정보, 공항클럽 위치, 클럽 드레스코드, 브루탈리즘 클럽, 공항클럽 입장규정, 스트리트브루탈리즘, 오버사이즈룩, pbn, raw-concrete">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공항 클럽 룩북 — 정보</title>
+    <meta name="description" content="공항 클럽 룩북에서 제공하는 상세 정보 페이지입니다. 공항 클럽 방문 전 알아야 할 필수 사항, 지역 정보, 그리고 성공적인 클럽 경험을 위한 데이터 기반의 분석 지침을 제공합니다.">
+    <meta name="keywords" content="공항 클럽 정보, 공항 클럽 이용 가이드, 공항 클럽 필수 확인, 지역별 클럽 정보">
     <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <link rel="canonical" href="https://t3b05-gh-club-look-1.vercel.app/info/">
-    <meta property="og:title" content="정보 — 공항 클럽 룩북 | 브루탈리즘 에지">
-    <meta property="og:description" content="길들여진 패션은 여기서 죽는다. 공항 클럽 룩북의 모든 정보를 원시 그대로 공개한다. 입장 규정, 드레스 코드, 위치. 규칙은 없다. 준비됐나?">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <link rel="canonical" href="https://airport-club-hot.mapo-room-guide.xyz/about.html">
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t3b05-gh-club-look-1.vercel.app/info/">
-    <meta property="og:image" content="https://t3b05-gh-club-look-1.vercel.app/assets/og-image.jpg">
+    <meta property="og:title" content="공항 클럽 룩북 — 정보">
+    <meta property="og:description" content="공항 클럽 룩북에서 제공하는 상세 정보 페이지입니다. 공항 클럽 방문 전 알아야 할 필수 사항, 지역 정보, 그리고 성공적인 클럽 경험을 위한 데이터 기반의 분석 지침을 제공합니다.">
+    <meta property="og:url" content="https://airport-club-hot.mapo-room-guide.xyz/about.html">
+    <meta property="og:site_name" content="공항 클럽 룩북">
+    <meta property="og:locale" content="ko_KR">
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="정보 — 공항 클럽 룩북 | 브루탈리즘 에지">
-    <meta name="twitter:description" content="길들여진 패션은 여기서 죽는다. 공항 클럽 룩북의 모든 정보. 입장 규정, 드레스 코드, 위치.">
+    <meta name="twitter:title" content="공항 클럽 룩북 — 정보">
+    <meta name="twitter:description" content="공항 클럽 룩북에서 제공하는 상세 정보 페이지입니다. 공항 클럽 방문 전 알아야 할 필수 사항, 지역 정보, 그리고 성공적인 클럽 경험을 위한 데이터 기반의 분석 지침을 제공합니다.">
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
     <style>
-        /* ---------- RESET & BASE ---------- */
-        *, *::before, *::after {
+        /* DESIGN SYSTEM: STREET BRUTALIST & NEO-GROTESQUE */
+        :root {
+            --color-primary: #FF00FF; /* Magenta */
+            --color-secondary: #00FFFF; /* Cyan */
+            --color-background: #0A0A0A; /* Deep Black */
+            --color-text-primary: #FFFFFF; /* White */
+            --color-text-secondary: #CCCCCC; /* Light Gray */
+            --font-family-grotesque: 'Arial', sans-serif;
+            --font-family-brutalist: 'Courier New', monospace;
+            --spacing-unit: 16px;
+        }
+
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        html {
-            font-size: 16px;
-            -webkit-text-size-adjust: 100%;
-            scroll-behavior: smooth;
-        }
+
         body {
-            background-color: #1a1a1a;
-            color: #e0e0e0;
-            font-family: 'Inter', 'Noto Sans KR', system-ui, -apple-system, sans-serif;
-            line-height: 1.5;
-            min-height: 100vh;
-            overflow-x: hidden;
+            font-family: var(--font-family-grotesque);
+            background-color: var(--color-background);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+            padding: calc(var(--spacing-unit) * 2);
         }
-        /* ---------- TYPOGRAPHY RAW ---------- */
-        h1, h2, h3, h4, h5, h6, p, li, blockquote, figcaption, a, button, input, textarea, label {
-            font-family: inherit;
-            color: inherit;
+
+        /* Typography Hierarchy */
+        h1, h2, h3 {
+            font-family: var(--font-family-brutalist);
+            text-transform: uppercase;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-unit);
         }
+
         h1 {
-            font-size: clamp(2.5rem, 8vw, 5rem);
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -0.03em;
-            line-height: 0.95;
-            color: #f5f5f5;
-            text-shadow: 2px 2px 0 #2d2d2d;
+            font-size: 3rem;
+            color: var(--color-primary);
         }
+
         h2 {
-            font-size: clamp(1.8rem, 5vw, 3rem);
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.01em;
-            color: #f5f5f5;
-            border-bottom: 4px solid #ff4d00;
-            display: inline-block;
-            padding-bottom: 0.2em;
-            margin-bottom: 0.8em;
+            font-size: 2rem;
+            color: var(--color-secondary);
+            margin-top: calc(var(--spacing-unit) * 3);
         }
+
         h3 {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-            color: #ff4d00;
-        }
-        p {
-            font-size: clamp(1rem, 2vw, 1.2rem);
-            line-height: 1.6;
-            color: #c0c0c0;
-        }
-        a, button {
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            text-decoration: none;
-            transition: all 0.15s ease;
-        }
-        a:hover, button:hover {
-            color: #ff4d00;
-            text-shadow: 0 0 8px rgba(255,77,0,0.4);
-        }
-        /* ---------- LAYOUT ---------- */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-            border-bottom: 3px solid #ff4d00;
-            background: #111;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            color: #ff4d00;
-            letter-spacing: -0.02em;
-        }
-        .nav {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        .nav a {
-            color: #e0e0e0;
-            font-size: 0.95rem;
-            padding: 0.3rem 0;
-            border-bottom: 2px solid transparent;
-        }
-        .nav a:hover, .nav a.active {
-            border-bottom-color: #ff4d00;
-            color: #ff4d00;
-        }
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 0.5rem;
-        }
-        .hamburger-menu span {
-            display: block;
-            width: 28px;
-            height: 3px;
-            background: #e0e0e0;
-            margin: 4px 0;
-            transition: 0.3s;
-        }
-        .hero {
-            padding: 4rem 0 2rem;
-            border-bottom: 2px solid #333;
-        }
-        .hero__title {
-            font-size: clamp(2.8rem, 10vw, 6rem);
-            font-weight: 900;
-            text-transform: uppercase;
-            line-height: 0.9;
-            color: #f5f5f5;
-            text-shadow: 4px 4px 0 #2d2d2d;
-            margin-bottom: 1rem;
-        }
-        .hero__sub {
-            font-size: 1.2rem;
-            color: #ff4d00;
-            font-weight: 700;
-            letter-spacing: 0.15em;
-        }
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        .card {
-            background: #222;
-            border: 2px solid #333;
-            padding: 2rem;
-            transition: 0.2s;
-            position: relative;
-        }
-        .card:hover {
-            border-color: #ff4d00;
-            transform: translateY(-4px);
-            box-shadow: 0 8px 0 #111;
-        }
-        .card__title {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: #ff4d00;
-            text-transform: uppercase;
-            margin-bottom: 0.5rem;
-        }
-        .card p {
-            font-size: 0.95rem;
-            color: #b0b0b0;
-        }
-        .faq {
-            margin: 4rem 0;
-            border-top: 3px solid #ff4d00;
-            padding-top: 2rem;
-        }
-        .faq__item {
-            border-bottom: 1px solid #333;
-            padding: 1.2rem 0;
-        }
-        .faq__q {
-            font-weight: 700;
-            font-size: 1.1rem;
-            cursor: pointer;
-            color: #f5f5f5;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .faq__q::after {
-            content: '+';
             font-size: 1.5rem;
-            color: #ff4d00;
-            transition: 0.2s;
+            color: var(--color-text-primary);
+            margin-top: calc(var(--spacing-unit) * 2);
         }
-        .faq__q.active::after {
-            content: '−';
+
+        p, li, td {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-unit);
         }
-        .faq__a {
-            margin-top: 0.8rem;
-            color: #b0b0b0;
-            line-height: 1.6;
-            display: none;
+
+        li {
+            margin-left: var(--spacing-unit);
         }
-        .faq__a.open {
-            display: block;
+
+        /* Layout Elements */
+        .q-grid-nped-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: calc(var(--spacing-unit) * 2);
+            margin-top: calc(var(--spacing-unit) * 2);
         }
-        .footer {
-            border-top: 3px solid #333;
-            padding: 2rem 0;
-            text-align: center;
-            color: #666;
-            font-size: 0.85rem;
+
+        /* Header */
+        .x-ico-wpw7 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-unit);
+            border-bottom: 1px solid var(--color-secondary);
+            margin-bottom: calc(var(--spacing-unit) * 2);
+        }
+
+        .k-item-02pl {
+            font-family: var(--font-family-brutalist);
+            font-size: 1.2rem;
+            font-weight: bold;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            color: var(--color-primary);
         }
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 2.5rem;
-            background: #ff4d00;
-            color: #111 !important;
-            font-weight: 800;
-            border: 2px solid #ff4d00;
+
+        .k-item-02 {
+            display: flex;
+            gap: var(--spacing-unit);
+        }
+
+        .k-item-02 a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            transition: 0.2s;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
         }
-        .btn:hover {
-            background: #111;
-            color: #ff4d00 !important;
-            border-color: #ff4d00;
+
+        .k-item-02 a:hover {
+            color: var(--color-primary);
         }
-        /* ---------- RESPONSIVE 768 ---------- */
+
+        /* Content Styling */
+        .content-section {
+            margin-bottom: calc(var(--spacing-unit) * 4);
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: calc(var(--spacing-unit) * 2);
+            border: 1px solid var(--color-secondary);
+            border-left: 4px solid var(--color-primary);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--color-secondary);
+        }
+
+        .card p {
+            color: var(--color-text-primary);
+        }
+
+        .faq-item {
+            border-bottom: 1px dashed var(--color-text-secondary);
+            padding-bottom: var(--spacing-unit);
+            margin-bottom: var(--spacing-unit);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: var(--color-primary);
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            display: none; /* Initially hidden */
+            margin-top: var(--spacing-unit);
+            color: var(--color-text-secondary);
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
-            .header {
-                padding: 0.8rem 1rem;
+            h1 {
+                font-size: 2rem;
             }
-            .nav {
-                display: none;
+            h2 {
+                font-size: 1.5rem;
+            }
+            .q-grid-nped-grid {
+                grid-template-columns: 1fr;
+            }
+            .x-ico-wpw7 {
                 flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right:
+                gap: var(--spacing-unit);
+            }
+            .k-item-02 {
+                justify-content: center;
+                margin-top: var(--spacing-unit);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="x-ico-wpw7">
+        <div class="k-item-02pl">공항 클럽 룩북</div>
+        <nav class="k-item-02">
+            <a href="/">홈</a>
+            <a href="/guide">스타일 가이드</a>
+            <a href="/info" class="active">정보</a>
+            <a href="/contact">문의</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h1>상세 정보</h1>
+            <p>공항 클럽 방문을 위한 필수적인 정보와 지역적 특성을 데이터 기반으로 분석하여 제공합니다. 성공적이고 안전한 클럽 경험을 위해 본 페이지의 정보를 숙지하시기 바랍니다.</p>
+
+            <div class="q-grid-nped-grid">
+                <div class="card">
+                    <h3>지역 시그널 분석</h3>
+                    <p>공항 인근 지역의 클럽들은 일반적으로 접근성과 편의성을 중시하는 경향이 있습니다. 데이터 분석 결과, 해당 지역 클럽들은 특정 시간대에 이용객이 집중되며, 다양한 교통편으로 접근이 용이합니다. 이는 여행객이나 비즈니스 출장객의 방문이 잦기 때문으로 분석됩니다. 따라서 방문 시 혼잡도를 고려하여 계획하는 것이 중요합니다.</p>
+                </div>
+
+                <div class="card">
+                    <h3>필수 확인 리스트</h3>
+                    <p>공항 클럽 방문 전 다음 항목을 반드시 확인하십시오:</p>
+                    <ul>
+                        <li><strong>운영 시간:</strong> 클럽별 운영 시간 및 요일 확인 (심야 운영 여부 중요)</li>
+                        <li><strong>복장 규정:</strong> 특정 복장 규제가 있는지 사전 확인 (캐주얼, 세미 정장 등)</li>
+                        <li><strong>입장 정책:</strong> 신분증 지참 필수, 연령 제한 확인</li>
+                        <li><strong>교통편:</strong> 대중교통, 택시, 자가용 등 접근 방법 및 주차 정보 확인</li>
+                        <li><strong>이벤트/프로모션:</strong> 특별 이벤트나 할인 정보 사전 파악</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>안전 수칙 및 에티켓</h3>
+                    <p>안전하고 즐거운 클럽 경험을 위해 다음 수칙을 준수하십시오:</p>
+                    <ul>
+                        <li><strong>음주 관리:</strong> 본인의 주량을 파악하고 과도한 음주를 자제합니다.</li>
+                        <li><strong>개인 소지품 관리:</strong> 귀중품은 최소화하고 소지품 보관에 유의합니다.</li>
+                        <li><strong>타인 존중:</strong> 다른 이용객 및 직원을 존중하는 태도를 유지합니다.</li>
+                        <li><strong>비상 연락망:</strong> 비상 상황 발생 시 대처 요령을 숙지하고, 필요시 직원의 도움을 받습니다.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>자주 묻는 질문 (FAQ)</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <p class="faq-question">공항 클럽은 일반 클럽과 어떤 점이 다른가요?</p>
+                    <p class="faq-answer">공항 클럽은 접근성, 즉 여행객의 편의를 고려한 운영 방식을 특징으로 합니다. 운영 시간이나 복장 규정 등에서 일반 클럽과 차이가 있을 수 있으며, 데이터 분석 결과에 따르면 특정 시간대에 이용객이 집중되는 경향을 보입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">공항 클럽 이용 시 가장 중요한 것은 무엇인가요?</p>
+                    <p class="faq-answer">공항 클럽 이용 시 가장 중요한 것은 사전에 충분한 정보를 확인하는 것입니다. 운영 시간, 복장 규정, 입장 정책, 교통편 등을 미리 파악하고, 안전 수칙을 준수하는 것이 성공적인 클럽 경험의 핵심입니다.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">데이터 기반 분석은 어떻게 활용되나요?</p>
+                    <p class="faq-answer">데이터 기반 분석은 공항 클럽 이용객의 패턴, 시간대별 혼잡도, 선호하는 스타일 등을 파악하는 데 사용됩니다. 이를 통해 방문객에게 최적의 방문 시기, 복장 선택, 그리고 안전한 이용에 대한 객관적인 지침을 제공할 수 있습니다.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>
